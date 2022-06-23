@@ -1,0 +1,20 @@
+.Header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    align-content: center;
+    margin: 0 138px;
+    height: 88px;
+}
+.Header-Logo {
+    align-self: start;
+    width: 120px;
+    height: 30px;
+}
+.Header-Contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-self: end;
+    color: #888888;
+}
