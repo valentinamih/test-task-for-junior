@@ -26,7 +26,7 @@ type InitialStateType = {
   cards: Array<CardType>
 }
 
-type CardType = {
+export type CardType = {
   author: string
   title: string
   description: string

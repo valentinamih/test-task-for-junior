@@ -1,0 +1,5 @@
+.Card {
+    display: grid;
+    border-radius: 10px;
+    background-color: white;
+}

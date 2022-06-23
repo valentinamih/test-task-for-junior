@@ -1,0 +1,44 @@
+.Carousel {
+    height: 446px;
+    width: 100%;
+    padding-top: 100px;
+    background: rgb(89,145,255);
+    background: linear-gradient(90deg, rgba(89,145,255,1) 19%, rgba(0,80,239,1) 87%);
+    color: white;
+}
+
+.Carousel-Image {
+    width: 100%;
+    height: 100%;
+    background: url("./../../assets/imgCarousel.png") no-repeat bottom right;
+    background-size: contain;
+}
+.Carousel-CarouselContent {
+    height: 100%;
+    margin-left: 9%;
+}
+.Carousel-CarouselContent_Heading {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.Carousel-CarouselContent_Description {
+    margin: 30px 0;
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.Carousel-CarouselContent_Button {
+    border: 0;
+    border-radius: 10px;
+    background: white;
+    color: #0050EF;
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+}
+.Carousel-CarouselContent_Dots {
+    display: grid;
+    align-self: end;
+}
