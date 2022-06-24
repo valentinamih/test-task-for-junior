@@ -14,6 +14,8 @@
     background-size: contain;
 }
 .Carousel-CarouselContent {
+    display: grid;
+    grid-auto-rows: auto auto auto 1fr;
     height: 100%;
     margin-left: 9%;
 }
@@ -41,4 +43,5 @@
 .Carousel-CarouselContent_Dots {
     display: grid;
     align-self: end;
+    margin-bottom: 65px;
 }

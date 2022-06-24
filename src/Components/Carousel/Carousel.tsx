@@ -11,7 +11,7 @@ export const Carousel: React.FunctionComponent<PropsType> = () => {
           Инструменты, которые могут использовать компании для удержания сотрудников
         </p>
         <button className={'Carousel-CarouselContent_Button'} type={"button"}>Подробнее</button>
-        <img src={dots} className={'Carousel-Dots'} alt={'dots'}/>
+        <img src={dots} className={'Carousel-CarouselContent_Dots'} alt={'dots'}/>
       </div>
     </div>
   </section>
