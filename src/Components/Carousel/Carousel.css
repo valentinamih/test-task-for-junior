@@ -1,7 +1,5 @@
 .Carousel {
-    height: 446px;
     width: 100%;
-    padding-top: 100px;
     background: rgb(89,145,255);
     background: linear-gradient(90deg, rgba(89,145,255,1) 19%, rgba(0,80,239,1) 87%);
     color: white;
@@ -17,19 +15,15 @@
     display: grid;
     grid-auto-rows: auto auto auto 1fr;
     height: 100%;
-    margin-left: 9%;
 }
+
 .Carousel-CarouselContent_Heading {
     margin: 0;
-    font-size: 3em;
     font-weight: 600;
 }
 
 .Carousel-CarouselContent_Description {
-    margin: 30px 0;
     max-width: 400px;
-    font-size: 16px;
-    line-height: 24px;
 }
 .Carousel-CarouselContent_Button {
     border: 0;
@@ -44,4 +38,59 @@
     display: grid;
     align-self: end;
     margin-bottom: 65px;
+}
+
+
+@media (min-width: 700px) {
+    .Carousel {
+        height: 446px;
+        padding-top: 100px;
+    }
+    .Carousel-CarouselContent {
+        margin-left: 9%;
+    }
+    .Carousel-CarouselContent_Heading {
+        font-size: 3em;
+    }
+    .Carousel-CarouselContent_Description {
+        margin: 30px 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .Carousel-CarouselContent_Button {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .Carousel-CarouselContent_Dots {
+        margin-bottom: 65px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .Carousel {
+        height: 365px;
+        padding-top: 20px;
+    }
+    .Carousel-CarouselContent {
+        margin-left: 4%;
+    }
+    .Carousel-CarouselContent_Heading {
+        font-size: 20px;
+    }
+    .Carousel-CarouselContent_Description {
+        margin: 16px 0 24px 0;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .Carousel-CarouselContent_Button {
+        width: 135px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .Carousel-CarouselContent_Dots {
+        width: 72px;
+        margin-bottom: 20px;
+    }
 }

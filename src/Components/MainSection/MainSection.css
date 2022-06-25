@@ -1,4 +1,15 @@
 .MainSection {
-    padding: 0 9%;
     background-color: #F6F9FF;
+}
+
+@media (min-width: 700px) {
+    .MainSection {
+        padding: 0 9%;
+    }
+}
+
+@media (max-width: 700px) {
+    .MainSection {
+        padding: 0 4%;
+    }
 }

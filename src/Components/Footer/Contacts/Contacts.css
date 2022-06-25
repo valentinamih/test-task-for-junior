@@ -1,0 +1,13 @@
+.Contacts {
+    display: grid;
+    grid-area: c;
+    grid-template-columns: 20px 20px 20px 20px;
+    justify-content: end;
+    gap: 16px;
+}
+
+@media (max-width: 700px) {
+    .Contacts {
+        margin-bottom: 20px;
+    }
+}

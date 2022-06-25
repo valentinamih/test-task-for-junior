@@ -7,9 +7,9 @@ import {Navigation} from "./Navigation/Navigation";
 export const Footer: React.FunctionComponent<PropsType> = props => {
   return <footer className={'Footer'}>
     <img className={'Footer-Logo'} src={logo}/>
-    <span className={'Footer-Information'}>© ООО «Лого», 2008—2022</span>
-    <Contacts />
     <Navigation />
+    <Contacts />
+    <span className={'Footer-Information'}>© ООО «Лого», 2008—2022</span>
   </footer>
 }
 

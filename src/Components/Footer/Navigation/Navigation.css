@@ -1,0 +1,48 @@
+.Navigation {
+    display: grid;
+    grid-area: n;
+    justify-content: end
+}
+.Navigation-List {
+    list-style-type: none;
+}
+.ListItem {
+    cursor: pointer;
+}
+.ListItem:hover {
+    transition: 1s;
+    color: #FFFFFF7C;
+}
+.Navigation-List_decision {
+    grid-area: d;
+}
+.Navigation-List_about {
+    grid-area: a;
+}
+.Navigation-List_blog {
+    grid-area: b;
+}
+.Navigation-List_contacts {
+    grid-area: c;
+}
+
+@media (min-width: 700px) {
+    .Navigation {
+        margin: 62px 0;
+    }
+    .Navigation-List {
+        display: flex;
+        gap: 48px;
+    }
+}
+@media (max-width: 700px) {
+    .Navigation {
+        margin: 32px 0;
+    }
+    .Navigation-List {
+        display: grid;
+        grid-template-areas: 'd b' 'a c';
+        padding: 0;
+        column-gap: 40px;
+    }
+}

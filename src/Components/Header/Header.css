@@ -6,15 +6,60 @@
     margin: 0 9%;
     height: 88px;
 }
+
 .Header-Logo {
     align-self: start;
     width: 120px;
     height: 30px;
 }
-.Header-Contacts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    justify-self: end;
+
+.Contact {
     color: #888888;
+    text-decoration: none;
+}
+
+.Contact:hover {
+    color: #696969;
+    transition: 1s;
+}
+
+@media (min-width: 700px) {
+    .Header-Contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        justify-self: end;
+    }
+
+    .Header-Contacts_image {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .Header-Contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        justify-self: end;
+    }
+
+    .Header-Contacts_contact {
+        display: none;
+    }
+
+    .Header-Contacts_image {
+        display: block;
+        width: 22px;
+        height: 22px;
+    }
+
+    .Email {
+        background-image: url("./../../assets/mail.png");
+    }
+
+    .Phone {
+        background-image: url("./../../assets/phone.png");
+    }
+
 }

@@ -7,7 +7,6 @@ export const Card: React.FunctionComponent<PropsType> = props => {
   let date = published.getDate()
   let month = published.getMonth()
   let year = published.getFullYear()
-  console.log(props.publishedAt,month)
   return <article className={'Card'}>
     <span className={'Card-Date'}>{`${date} ${props.months[month+1]} ${year}`}</span>
     <h3 className={'Card-Title'}>{props.title}</h3>
