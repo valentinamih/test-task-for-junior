@@ -16,6 +16,11 @@
     align-self: start;
     margin: 8px 0 16px 0;
     color: #888888;
+    cursor: pointer;
+}
+.Card-Title:hover {
+    transition: .5s;
+    color: #6C6C6CFF;
 }
 .Card-Description {
     color: #888888;

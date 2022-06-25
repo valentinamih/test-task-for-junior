@@ -3,7 +3,6 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     align-content: center;
-    margin: 0 9%;
     height: 88px;
 }
 
@@ -18,17 +17,23 @@
     text-decoration: none;
 }
 
+.Header-Contacts {
+    display: grid;
+    justify-self: end;
+    grid-template-columns: 1fr 1fr;
+}
+
 .Contact:hover {
     color: #696969;
     transition: 1s;
 }
 
 @media (min-width: 700px) {
+    .Header {
+        margin: 0 9%;
+    }
     .Header-Contacts {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         gap: 40px;
-        justify-self: end;
     }
 
     .Header-Contacts_image {
@@ -37,11 +42,11 @@
 }
 
 @media (max-width: 700px) {
+    .Header {
+        margin: 0 4%;
+    }
     .Header-Contacts {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         gap: 16px;
-        justify-self: end;
     }
 
     .Header-Contacts_contact {
