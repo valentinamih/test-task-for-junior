@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://valentinamih.github.io/test-task-for-junior",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -19,6 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,6 +49,7 @@
     "@reduxjs/toolkit": "^1.8.2",
     "@types/react-text-truncate": "^0.14.1",
     "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
     "react-redux": "^8.0.2"
   }
 }
