@@ -14,9 +14,8 @@ export const getCards = createAsyncThunk('cards/getCards',
   })
 export const filterCardsByName = createAsyncThunk('cards/filterCardsByName',
   async function (name: string, ThunkAPI: any) {
-  debugger
   let cards: Array<CardType> = ThunkAPI.getState().cardsReducer.cards
-    return cards.filter(card => card.author === name)
+    return cards.filter(card => (name === 'unknown') ? card.author === null :  card.author === name  )
   })
 
 export const cardsSlice = createSlice({
@@ -26,9 +25,10 @@ export const cardsSlice = createSlice({
   extraReducers: builder => {
     builder.addCase(getCards.fulfilled, (state, action) => {
       state.cards = action.payload
-      let res: Array<string> = []
-      state.cards.forEach((card) => {res.push(card.author)})
-      state.authors = res
+      state.filteredCards = action.payload
+      let authors = new Set
+      state.cards.forEach(card => {card.author ? authors.add(card.author) : authors.add('unknown')})
+      state.authors = Array.from(authors)
     })
     builder.addCase(filterCardsByName.fulfilled, (state, action) => {
       state.filteredCards = action.payload
@@ -38,7 +38,7 @@ export const cardsSlice = createSlice({
 
 type InitialStateType = {
   cards: Array<CardType>
-  authors: Array<string>
+  authors: any
   filteredCards: Array<CardType>
 }
 
