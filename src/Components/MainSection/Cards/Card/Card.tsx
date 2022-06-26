@@ -25,6 +25,6 @@ type PropsType = {
   author: string
   title: string
   description: string
-  publishedAt: string
+  publishedAt: Date
   months: Array<string>
 }

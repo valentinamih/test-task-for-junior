@@ -4,6 +4,7 @@ import './FilterSections.css'
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../redux/store";
 import {filterCardsByName} from "../../../redux/cardsSlice";
+import {DatePickerComponent} from "./DatePicker";
 
 export const FilterSection: React.FunctionComponent<PropsType> = props => {
   let authors: Array<string> = useSelector((state: RootState) => state.cardsReducer.authors)
@@ -13,7 +14,9 @@ export const FilterSection: React.FunctionComponent<PropsType> = props => {
     dispatch(filterCardsByName(selectedOption.value))
   }
   return <section className={'FilterSection'}>
-    <Select options={options} onChange={(selectedOption: any) => changeAuthor(selectedOption)}/>
+    <Select options={options}
+            onChange={(selectedOption: any) => changeAuthor(selectedOption)}/>
+    <DatePickerComponent />
   </section>
 }
 
