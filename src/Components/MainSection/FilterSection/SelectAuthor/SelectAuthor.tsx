@@ -52,6 +52,22 @@ export const SelectAuthor: React.FunctionComponent<PropsType> = props => {
       ...provided,
       display: 'none'
     }),
+      menuList: (provided: any, state: any ) => ({
+        ...provided,
+        "::-webkit-scrollbar": {
+          width: "4px",
+          height: "0px",
+        },
+        "::-webkit-scrollbar-track": {
+          background: "#f1f1f1"
+        },
+        "::-webkit-scrollbar-thumb": {
+          background: "#888888"
+        },
+        "::-webkit-scrollbar-thumb:hover": {
+          background: "#555"
+        }
+      }),
     dropdownIndicator: (provided: any, state: any ) => ({
       ...provided,
       color: '#0050EF'
