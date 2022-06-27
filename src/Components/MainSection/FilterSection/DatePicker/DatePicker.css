@@ -7,14 +7,17 @@
     background: white;
     color: #888888;
 }
+
 .Dash {
     width: 10px;
 }
+
 .react-date-picker__wrapper {
     border: 0;
     padding: 16px 16px;
 
 }
+
 .react-date-picker__inputGroup__input {
     color: #888888;
 }

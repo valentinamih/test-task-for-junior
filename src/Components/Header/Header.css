@@ -32,6 +32,7 @@
     .Header {
         margin: 0 9%;
     }
+
     .Header-Contacts {
         gap: 40px;
     }
@@ -45,6 +46,7 @@
     .Header {
         margin: 0 4%;
     }
+
     .Header-Contacts {
         gap: 16px;
     }

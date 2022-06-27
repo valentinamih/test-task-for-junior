@@ -4,10 +4,12 @@
     background-color: #011846;
     color: white;
 }
+
 .Footer-Logo {
     display: grid;
     grid-area: l;
 }
+
 .Footer-Information {
     display: grid;
     grid-area: i;
@@ -19,6 +21,7 @@
         padding: 0 9% 48px 9%;
     }
 }
+
 @media (max-width: 700px) {
     .Footer {
         display: flex;
