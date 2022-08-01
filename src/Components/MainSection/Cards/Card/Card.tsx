@@ -1,12 +1,12 @@
-import React from 'react';
-import './Card.css';
-import TextTruncate from 'react-text-truncate';
+import React from 'react'
+import './Card.css'
+import TextTruncate from 'react-text-truncate'
 
 export const Card: React.FunctionComponent<PropsType> = props => {
-  let published = new Date(props.publishedAt);
-  let date = published.getDate();
-  let month = published.getMonth();
-  let year = published.getFullYear();
+  let published = new Date(props.publishedAt)
+  let date = published.getDate()
+  let month = published.getMonth()
+  let year = published.getFullYear()
   return <article className={'Card'}>
     <span className={'Card-Date'}>{`${date} ${props.months[month + 1]} ${year}`}</span>
     <h3 className={'Card-Title'}>{props.title}</h3>
@@ -18,8 +18,8 @@ export const Card: React.FunctionComponent<PropsType> = props => {
       text={props.description}
     />
     <span className={'Card-Author'}>{props.author || 'no author :('}</span>
-  </article>;
-};
+  </article>
+}
 
 type PropsType = {
   author: string

@@ -1,7 +1,7 @@
-import React from 'react';
-import './Navigation.css';
+import React from 'react'
+import './Navigation.css'
 
-export const Navigation: React.FunctionComponent<PropsType> = props => {
+export const Navigation: React.FunctionComponent = () => {
   return <nav className={'Navigation'}>
     <ul className={'Navigation-List'}>
       <li className={'Navigation-List_decision ListItem'}>Готовые решения</li>
@@ -9,7 +9,5 @@ export const Navigation: React.FunctionComponent<PropsType> = props => {
       <li className={'Navigation-List_blog ListItem'}>Блог</li>
       <li className={'Navigation-List_contacts ListItem'}>Контакты</li>
     </ul>
-  </nav>;
-};
-
-type PropsType = {}
+  </nav>
+}

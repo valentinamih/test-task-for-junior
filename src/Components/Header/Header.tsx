@@ -1,8 +1,8 @@
-import React from 'react';
-import logo from './../../assets/logo.png';
-import './Header.css';
+import React from 'react'
+import logo from './../../assets/logo.png'
+import './Header.css'
 
-export const Header: React.FunctionComponent<PropsType> = props => {
+export const Header: React.FunctionComponent = () => {
   return <header className={'Header'}>
     <img className={'Header-Logo'} src={logo} alt={'logo'} />
     <aside className={'Header-Contacts'}>
@@ -11,7 +11,5 @@ export const Header: React.FunctionComponent<PropsType> = props => {
       <a href='tel: 88000000000' className={'Header-Contacts_image Phone Contact'} />
       <a href='mailto: example@mail.ru' className={'Header-Contacts_image Email Contact'} />
     </aside>
-  </header>;
-};
-
-type PropsType = {}
+  </header>
+}
